@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cool Contacts App</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="hero-unit">
+  <h1>Real Cool Contacts App</h1>
+</div>
+
+<div class="container">
+  <div class="form">
+    <form class="form-inline">
+      <input type="text" class="input-small" placeholder="Name" name="name">
+      <input type="text" class="input-small" placeholder="Email" name="email">
+      <button type="submit" class="btn">Add</button>
+    </form>
+  </div>
+
+  <table class="table table-stripe">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </table>
+</div>
+
+
+<script type="text/template" id="tmpl-table">
+{{#each contacts}}
+<tr>
+  <td>{{this.name}}</td>
+  <td>{{this.email}}</td>
+</tr>
+{{/each}}
+
+</script>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>

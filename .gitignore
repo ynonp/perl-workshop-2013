@@ -1,0 +1,3 @@
+logparser/db
+crawler/db
+logparser/logs/*.log
